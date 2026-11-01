@@ -357,6 +357,13 @@ def multipage(filename, figs=None, dpi=200):
 
 multipage("C:\\Users\\lukas\\Files\\Dev\\CSC201\\src\\assets\\CSC201-Visualization.pdf")
 
+def individualImages():
+    figs = plt.get_fignums()
+    for fig in figs:
+        plt.figure(fig)
+        plt.savefig(f'C:\\Users\\lukas\\Files\\Dev\\CSC201\\src\\assets\\image{fig}.png', format='png')
+
+individualImages()
 
 ## Call at the end
 plt.show()
