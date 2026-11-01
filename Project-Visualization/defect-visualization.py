@@ -8,8 +8,14 @@ plt.style.use('dark_background') ## Accessibility
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width',1000)
 
+annotationTrain = pd.read_csv("C:\\Users\\lukas\\Files\\Dev\\CSC201\\Data\\Train\\_annotations.csv")
+annotationTrain.info() #no null values
+
 annotationTest =  pd.read_csv("C:\\Users\\lukas\\Files\\Dev\\CSC201\\Data\\Test\\_annotations.csv")
 annotationTest.info() #no null values
+
+annotationValid = pd.read_csv("C:\\Users\\lukas\\Files\\Dev\\CSC201\\Data\\Valid\\_annotations.csv")
+annotationValid.info() #no null values
 
 # Y max [test] plot
 
@@ -29,10 +35,6 @@ plt.grid(False)
 
 
 plt.tight_layout()
-
-
-
-
 
 # Y min [test] plot
 
