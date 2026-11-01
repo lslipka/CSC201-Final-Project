@@ -17,7 +17,7 @@ plt.figure(figsize=(6, 4))
 sns.histplot(data=annotationTest, x='ymax', bins=30, kde=True, color='red')
 
 
-plt.title('Ymax Plot')
+plt.title('Y Max Plot, Test Data')
 
 
 plt.xlabel('Y max')
