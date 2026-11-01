@@ -55,6 +55,43 @@ plt.grid(False)
 
 plt.tight_layout()
 
+# Y max [test] plot
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationTest, x='ymax', bins=30, kde=True, color='red')
+
+
+plt.title('Y Max Plot, Test Data')
+
+
+plt.xlabel('Y max')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+# class [test] plot
+
+plt.figure(figsize=(10, 8))
+
+sns.histplot(data=annotationTest, x='class', bins=30, kde=True, color='red')
+
+
+plt.title('Class Plot, Test Data')
+
+
+plt.xlabel('Class')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+
 
 
 
