@@ -24,7 +24,7 @@ plt.xlabel('Y max')
 plt.ylabel('Frequency')
 
 
-plt.grid(True)
+plt.grid(False)
 
 
 plt.tight_layout()
