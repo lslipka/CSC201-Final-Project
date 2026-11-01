@@ -11,6 +11,7 @@ pd.set_option('display.width',1000)
 annotationTest =  pd.read_csv("C:\\Users\\lukas\\Files\\Dev\\CSC201\\Data\\Test\\_annotations.csv")
 annotationTest.info() #no null values
 
+# Y max [test] plot
 
 plt.figure(figsize=(6, 4))
 
@@ -30,5 +31,32 @@ plt.grid(False)
 plt.tight_layout()
 
 
+
+
+
+# Y min [test] plot
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationTest, x='ymin', bins=30, kde=True, color='red')
+
+
+plt.title('Y Min Plot, Test Data')
+
+
+plt.xlabel('Y min')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+
+
+
+
+
+## Call at the end
 plt.show()
-plt.close()
