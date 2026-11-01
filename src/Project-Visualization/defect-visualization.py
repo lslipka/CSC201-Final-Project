@@ -28,12 +28,14 @@ annotationValid.info() #no null values
 
 ## Begin Train
 
+# Begin Y max [train]
+
 plt.figure(figsize=(6, 4))
 
 sns.histplot(data=annotationTrain, x='ymax', bins=30, kde=True, color='orange')
 
 
-plt.title('Y Max Plot, Test Data')
+plt.title('Y Max Plot, Train Data')
 
 
 plt.xlabel('Y max')
@@ -45,13 +47,200 @@ plt.grid(False)
 
 plt.tight_layout()
 
+# Begin y min [train]
+
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationTrain, x='ymin', bins=30, kde=True, color='orange')
+
+
+plt.title('Y Min Plot, Train Data')
+
+
+plt.xlabel('Y min')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+# Begin X max [train]
+
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationTrain, x='xmax', bins=30, kde=True, color='orange')
+
+
+plt.title('X Max Plot, Train Data')
+
+
+plt.xlabel('X max')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+
+# Begin X min [train]
+
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationTrain, x='xmin', bins=30, kde=True, color='orange')
+
+
+plt.title('X Min Plot, Train Data')
+
+
+plt.xlabel('X min')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+
+# Begin class [train]
+
+
+plt.figure(figsize=(10, 8))
+
+sns.histplot(data=annotationTrain, x='class', bins=30, kde=True, color='orange')
+
+
+plt.title('Class Plot, Train Data')
+
+
+plt.xlabel('Class')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
 
 ## End Train
 
+## Begin Valid
+
+# Begin Y max [valid]
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationValid, x='ymax', bins=30, kde=True, color='green')
+
+
+plt.title('Y Max Plot, Validation Data')
+
+
+plt.xlabel('Y max')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+# Begin y min [valid]
+
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationValid, x='ymin', bins=30, kde=True, color='green')
+
+
+plt.title('Y Min Plot, Validation Data')
+
+
+plt.xlabel('Y min')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+# Begin X max [valid]
+
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationValid, x='xmax', bins=30, kde=True, color='green')
+
+
+plt.title('X Max Plot, Validation Data')
+
+
+plt.xlabel('X max')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+
+# Begin X min [valid]
+
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationValid, x='xmin', bins=30, kde=True, color='green')
+
+
+plt.title('X Min Plot, Validation Data')
+
+
+plt.xlabel('X min')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+
+# Begin class [valid]
+
+
+plt.figure(figsize=(10, 8))
+
+sns.histplot(data=annotationValid, x='class', bins=30, kde=True, color='green')
+
+
+plt.title('Class Plot, Validation Data')
+
+
+plt.xlabel('Class')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+
+## End Valid
 
 ## Begin Test
 
-# Y max [test] plot
+# Begin Y max [test]
 
 plt.figure(figsize=(6, 4))
 
@@ -70,7 +259,8 @@ plt.grid(False)
 
 plt.tight_layout()
 
-# Y min [test] plot
+# Begin y min [test]
+
 
 plt.figure(figsize=(6, 4))
 
@@ -89,17 +279,18 @@ plt.grid(False)
 
 plt.tight_layout()
 
-# Y max [test] plot
+# Begin X max [test]
+
 
 plt.figure(figsize=(6, 4))
 
-sns.histplot(data=annotationTest, x='ymax', bins=30, kde=True, color='red')
+sns.histplot(data=annotationTest, x='xmax', bins=30, kde=True, color='red')
 
 
-plt.title('Y Max Plot, Test Data')
+plt.title('X Max Plot, Test Data')
 
 
-plt.xlabel('Y max')
+plt.xlabel('X max')
 plt.ylabel('Frequency')
 
 
@@ -108,7 +299,30 @@ plt.grid(False)
 
 plt.tight_layout()
 
-# class [test] plot
+
+# Begin X min [test]
+
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(data=annotationTest, x='xmin', bins=30, kde=True, color='red')
+
+
+plt.title('X Min Plot, Test Data')
+
+
+plt.xlabel('X min')
+plt.ylabel('Frequency')
+
+
+plt.grid(False)
+
+
+plt.tight_layout()
+
+
+# Begin class [test]
+
 
 plt.figure(figsize=(10, 8))
 
@@ -125,8 +339,10 @@ plt.ylabel('Frequency')
 plt.grid(False)
 
 
-## End Test
+plt.tight_layout()
 
+
+## End Test
 
 
 
